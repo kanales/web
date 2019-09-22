@@ -1,0 +1,8 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--{{ $css := "css/style.css" | absURL }}-->
+    {{ $css := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}">
+    <title>{{ .Title }}</title>
+</head>

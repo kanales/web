@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+
+<body>
+    <h1 class='title'>
+        <a href="/"><span class="accent">ivan</span>canal.es</a>
+    </h1>
+    <div>
+        <a href='https://github.com/kanales'>{{ partial "fontawesome.html" "github" }} github</a>
+    </div>
+    <div class="container">
+        <main id="main">
+            {{ block "main" . }}{{ end }}
+        </main>
+    </div>
+</body>
+
+</html>
