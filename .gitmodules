@@ -2,3 +2,7 @@
 	path = kanales.github.io
 	url = git@github.com:kanales/kanales.github.io.git
 	branch = master
+[submodule "public"]
+	path = public
+	url = git@github.com:kanales/kanales.github.io.git
+	branch = master
