@@ -1,0 +1,4 @@
+[submodule "kanales.github.io"]
+	path = kanales.github.io
+	url = git@github.com:kanales/kanales.github.io.git
+	branch = master
