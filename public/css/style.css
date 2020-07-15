@@ -1,0 +1,143 @@
+html {
+  background: #191919;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: -10px auto;
+  max-width: 650px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #d0d2d1;
+  background: #27292c;
+  padding: 10px 0;
+}
+h1,
+h2,
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+.title {
+  font-size: 63px;
+  padding: 0 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.title a {
+  color: #d0d2d1;
+}
+
+.footer {
+  font-size: 12px;
+}
+.icon {
+  fill: #d0d2d1;
+}
+.octicon {
+  fill: #d0d2d1;
+}
+
+a {
+  text-decoration: none;
+  color: #b5bd68;
+}
+
+a.link {
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ced876;
+}
+
+.accent {
+  color: #b5bd68;
+}
+
+.inline-svg {
+  display: inline-block;
+  height: 1.15rem;
+  width: 1.15rem;
+  top: 0.15rem;
+  position: relative;
+}
+
+/* Add a black background color to the top navigation */
+nav {
+  background-color: #d0d2d1;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+  float: left;
+  display: block;
+  color: #191919;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+nav a.active {
+  background-color: #b5bd68;
+  color: #191919;
+}
+
+section.showing {
+  display: block;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The alert message box */
+.info {
+  padding: 20px;
+  background-color: #2196f3; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The alert message box */
+.warning {
+  padding: 20px;
+  background-color: #ff9800; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
