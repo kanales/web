@@ -1,0 +1,9 @@
+[submodule "theorem-prover-js"]
+	path = theorem-prover-js
+	url = https://github.com/kanales/theorem-prover-js
+[submodule "ray-tracing"]
+	path = ray-tracing
+	url =  https://github.com/kanales/ray-tracing.git
+[submodule "raytracer-wasm"]
+	path = raytracer-wasm
+	url = https://github.com/kanales/raytracer-wasm.git
