@@ -1,6 +1,0 @@
-baseURL = "https://ivancanal.es"
-languageCode = "en-us"
-title = "ivancanal.es"
-
-[params]
-    homeText = "WIP"

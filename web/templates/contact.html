@@ -1,0 +1,38 @@
+{% extends "_base.html" %}
+{% set active = 'contact' %}
+
+{% block content %}
+<section id="contact">
+    <h1>Personal Information</h1>
+    Iván Canales Martín
+    <p>
+        <b>address:</b>
+    <address>
+        Carrer de València, nº10, 2º2ª<br>
+        08970, Sant Joan Despí<br>
+        Barcelona<br>
+    </address>
+    </p>
+    <p><b>email: </b>
+        <span class="hidden-email" data-email="aXZhbmNhbmFsZXN0Z25hQGdtYWlsLmNvbQ==">
+            <a onclick="showEmail">
+                Show Email
+            </a>
+        </span>
+
+    </p>
+    <p><b>github: </b><a href="https://github.com/kanales/">kanales</a></p>
+</section>
+<script>
+    function show_email(anchor) {
+        let email = atob(anchor.getAttribute('data-email'))
+        anchor.innerHTML = `<a href="mailto:${email}">${email}</a>`
+    }
+    window.onload = () => {
+        let anchors = document.getElementsByClassName('hidden-email')
+        for (let anchor of anchors) {
+            show_email(anchor)
+        }
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% set active = 'posts' %}
+
+{% block content %}
+<section id="about-me" class="showing">
+    <h1>Posts</h1>
+
+    {% for data in filedata %}
+    <h3><a href="{{ data.file }}">{{ data.name }}</a></h3>
+    {% endfor %}
+</section>
+{% endblock %}
