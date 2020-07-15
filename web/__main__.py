@@ -19,10 +19,13 @@ env = Environment(
 )
 
 
-if os.path.exists(OUT_DIR):
-    shutil.rmtree(OUT_DIR)
+for root, dirs, files in os.walk(OUT_DIR):
+    for dir in dirs:
+        shutil.rmtree(os.path.join(root, dir))
 
-os.mkdir(OUT_DIR)
+    for file in files:
+        if not file.startswith('.git'):
+            os.remove(os.path.join(root, file))
 
 
 class Data:
